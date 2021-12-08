@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display" id="display"></div>
+
+        <div class="CE"><button>CE</button></div>
+        <div class="divide"><button onclick="add_element('/')">/</button></div>
+        <div class="multiply"><button onclick="add_element('*')">*</button></div>
+
+        <div class="seven"><button onclick="add_element(7)">7</button></div>
+        <div class="eigth"><button onclick="add_element(8)">8</button></div>
+        <div class="nine"><button onclick="add_element(9)">9</button></div>
+        <div class="subtract"><button onclick="add_element('-')">-</button></div>
+
+        <div class="four"><button onclick="add_element(4)">4</button></div>
+        <div class="five"><button onclick="add_element(5)">5</button></div>
+        <div class="six"><button onclick="add_element(6)">6</button></div>
+        <div class="add"><button onclick="add_element('+')">+</button></div>
+
+        <div class="one"><button onclick="add_element(1)">1</button></div>
+        <div class="two"><button onclick="add_element(2)">2</button></div>
+        <div class="three"><button onclick="add_element(3)">3</button></div>
+        <div class="equals"><button onclick="operate()">=</button></div>
+
+
+        <div class="zero"><button onclick="add_element(0)">0</button></div>
+        <div class="dot"><button onclick="add_element('.')">.</button></div>
+        <div class="clear"><button onclick="clear_everything()">C</button></div>
+
+
+
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
