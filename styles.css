@@ -11,7 +11,7 @@ body {
     grid-template-columns: repeat(4, minmax(1fr, 1fr));
     background-color: skyblue;
     width: 450px;
-    height: 600px;
+    height: 601px;
     border: 2px solid black;
 
     
