@@ -81,7 +81,6 @@ while (equation.includes('+') || equation.includes('-')) {
 }
 }
 document.getElementById('display').innerHTML =`${equation.join('')}`;
-equation.length = 0;
 }
 
 //defines what happens after clicking the 'C' sign (clears all entries)
@@ -90,3 +89,26 @@ function clear_everything(){
     document.getElementById('display').innerHTML =`${equation.join('')}`;
 
 }
+
+//defines what happens after clicking the 'CE' sign (clears the last entry)
+function clear_last_entry() {
+    // for (let i = 0; i < equation.length; i++){
+        if (typeof equation[equation.length-1] == 'number'){
+            let num = equation[equation.length-1].toString()
+            new_num = num.slice(0,-1)
+            if (new_num.length > 0) { 
+            new_num = Number(new_num)
+            }
+            console.log(new_num)
+            equation[equation.length-1] = new_num
+
+            console.log(equation)
+        }
+        else {
+            equation.pop()
+            console.log(equation)
+
+        }
+        document.getElementById('display').innerHTML =`${equation.join('')}`;
+    }
+
